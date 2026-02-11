@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# Honeypot Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application built with React, Vite, and TypeScript. This project leverages the power of Tailwind CSS for styling and Radix UI for accessible, high-quality components.
 
-Currently, two official plugins are available:
+## 🚀 Data Features & Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is built using a robust stack of modern technologies:
 
-## React Compiler
+### Core
+-   **[React 19](https://react.dev/)**: The latest version of the popular UI library.
+-   **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for fast development and building.
+-   **[TypeScript](https://www.typescriptlang.org/)**: Ensures type safety and better developer experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Styling & UI
+-   **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework for rapid UI development.
+-   **[Radix UI](https://www.radix-ui.com/)**: Unstyled, accessible components for building high-quality design systems.
+-   **[Lucide React](https://lucide.dev/)**: Beautiful & consistent icons.
+-   **[Sonner](https://sonner.emilkowal.ski/)**: An opinionated toast component for React.
+-   **[Next Themes](https://github.com/pacocoursey/next-themes)**: Perfect dark mode support.
 
-## Expanding the ESLint configuration
+### Animation
+-   **[Framer Motion](https://www.framer.com/motion/)**: Production-ready motion library for React.
+-   **[tw-animate-css](https://github.com/shshaw/tw-animate-css)**: Tailwind plugin for Animate.css animations.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Functionality
+-   **[React Hook Form](https://react-hook-form.com/)**: Performant, flexible and extensible forms with easy-to-use validation.
+-   **[Zod](https://zod.dev/)**: TypeScript-first schema declaration and validation library.
+-   **[Recharts](https://recharts.org/)**: Redefined chart library built with React and D3.
+-   **[cmdk](https://cmdk.paco.me/)**: Fast, composable, unstyled command menu for React.
+-   **[date-fns](https://date-fns.org/)**: Modern JavaScript date utility library.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Follow these steps to get the project up and running on your local machine.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+Ensure you have [Node.js](https://nodejs.org/) installed (version 18 or higher recommended).
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd honeypot-main
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Development
+
+Start the development server with hot module replacement:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The application will be available at `http://localhost:5173` (or the port shown in your terminal).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📜 Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   `npm run dev`: Starts the development server.
+-   `npm run build`: Compiles the application for production using TypeScript and Vite.
+-   `npm run preview`: Locally reviews the production build.
+-   `npm run lint`: Runs ESLint to check for code quality and style issues.
+
+## 📂 Project Structure
+
 ```
+src/
+├── assets/        # Static assets (images, fonts, etc.)
+├── components/    # Reusable UI components (buttons, inputs, etc.)
+├── lib/           # Utility functions, helpers, and shared logic
+├── App.tsx        # Main application component
+├── main.tsx       # Application entry point
+└── index.css      # Global styles and Tailwind configuration
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+
