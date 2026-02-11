@@ -1,0 +1,10 @@
+src/components/chat/chat-ui.tsx(6,3): error TS6133: 'ShieldAlert' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(15,3): error TS6133: 'Search' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(17,16): error TS6133: 'CardHeader' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(17,28): error TS6133: 'CardTitle' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(17,39): error TS6133: 'CardContent' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(21,1): error TS6133: 'AnimatedAvatar' is declared but its value is never read.
+src/components/chat/chat-ui.tsx(38,10): error TS6133: 'speaking' is declared but its value is never read.
+src/components/chat/message-bubble.tsx(3,1): error TS6133: 'React' is declared but its value is never read.
+src/components/theme-provider.tsx(3,1): error TS6133: 'React' is declared but its value is never read.
+src/components/theme-provider.tsx(7,8): error TS2307: Cannot find module 'next-themes' or its corresponding type declarations.
