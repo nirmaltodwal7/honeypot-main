@@ -1,4 +1,4 @@
-# 🍯 Honeypot Frontend
+# 🍯 Honeypo
 
 A scalable, modern, and production-ready frontend application built using **React 19**, **Vite**, and **TypeScript**. Honeypot is designed with performance, accessibility, scalability, and developer experience at its core.
 
